@@ -18,6 +18,6 @@ client.on('message',(channel,tags,message,self) =>{
   //prevent echoing
   if(self) return;
   if(message.toLocaleLowerCase()==='!hello'){
-    client.say(channel, `@Welcome ${tags.username}!`)
+    client.say(channel, `Welcome @${tags.username}!`)
   }
 });
