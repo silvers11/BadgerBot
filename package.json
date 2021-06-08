@@ -1,8 +1,8 @@
 {
-  "name": "TwitchBot",
+  "name": "twitchbot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "mongodb": "^3.6.9",
+    "mongoose": "^5.12.13",
     "tmi.js": "^1.8.3"
   }
 }

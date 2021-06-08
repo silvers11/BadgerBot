@@ -1,4 +1,5 @@
 const tmi=require('tmi.js');
+const mongoose=require('mongoose');
 const dotenv=require('dotenv');
 dotenv.config();
 const client=new tmi.client({
@@ -12,6 +13,8 @@ const client=new tmi.client({
   },
   channels:[process.env.TWITCH_CHANNEL]
 });
+
+
 client.connect();
 client.on('message',(channel,tags,message,self) =>{
   console.log(`${tags['display-name']}: ${message}`);
